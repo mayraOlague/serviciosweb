@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<link rel="stylesheet" href="css/estilos.css">
+	
 </head>
 <body>
 	<header>
@@ -18,6 +19,19 @@
 			<li><button type="button" class="btn btn-danger">Salir</button></li>
 		</ul>
 	</header>
-	
+ 	<section id="secAltaAlumnos">
+ 		<h2>Altas De Alumnos</h2>
+ 		<form action="">
+ 		<input type="text" id="txtNumControl" placeholder="Número de control" class="form-control" required autofocus  >
+ 		<input type="text" id="txtNombres" placeholder="Nombres" class="form-control" required  >
+ 		<input type="text" id="txtApellidoPat" placeholder="Apellido Paterno" class="form-control" required  >
+ 		<input type="text" id="txtApellidoMat" placeholder="Apellido Materno" class="form-control" required  >
+ 		<input type="text" id="txtClaveCarrera" placeholder="Clave Carrera" class="form-control" required  >
+ 		<input type="text" id="txtSemestre" placeholder="Semestre" class="form-control" required  >
+ 		<input type="text" id="txtPromedio" placeholder="Promedio" class="form-control" required  >
+ 		<input type="text" id="txtEstatus" placeholder="Estatus" class="form-control"  required >
+ 		<input type="submit" value="Guardar"><!--  con el submit activamos el formulario -->
+ 		</form>	
+ 	</section>
 </body>
 </html>

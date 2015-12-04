@@ -14,3 +14,9 @@ header ul li button
 {
 	width: 89px; /*el ancho de la caja se debe de poner el tamaño de la caja mas grande para que todas sean del mismo tamaño*/
 }
+#secAltaAlumnos
+{
+	display: none; /* para ocultar el formulario */
+	margin: 0 auto;
+	width: 350px;  /*es el tamano de las cajas del formulario de alta alumnos*/
+}
