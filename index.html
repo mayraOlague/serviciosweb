@@ -14,10 +14,10 @@
 		<h1>Sistema PW10</h1>
 		<ul>
 			<li><button type="button" id="btnAltas" class="btn btn-primary">Altas</button></li>
-			<li><button type="button" class="btn btn-success">Bajas</button></li>
-			<li><button type="button" class="btn btn-info">Cambios</button></li>
-			<li><button type="button" class="btn btn-warning">Consultas</button></li>
-			<li><button type="button" class="btn btn-danger">Salir</button></li>
+			<li><button type="button" id="btnBajas" class="btn btn-success">Bajas</button></li>
+			<li><button type="button" id="btnCambios" class="btn btn-info">Cambios</button></li>
+			<li><button type="button" id="btnConsultas"class="btn btn-warning">Consultas</button></li>
+			<li><button type="button" id="btnSalir"class="btn btn-danger">Salir</button></li>
 		</ul>
 	</header>
  	<section id="secAltaAlumnos">
@@ -33,6 +33,12 @@
  		<input type="text" id="txtEstatus" placeholder="Estatus" class="form-control"  required >
  		<input type="submit" value="Guardar"><!--  con el submit activamos el formulario -->
  		</form>	
+ 	</section>
+ 	<section id="secBajaAlumnos">
+ 		<h2>Bajas de Alumnos</h2>
+ 		<form action="javascript:BajaAlumno();" id ="frmBajaAlumnos"></form>
+ 		<input type="text" id="txtNumControl" placeholder="Número de Control" class="form-control" required>
+ 		<input type="submit" value="Aceptar">
  	</section>
 </body>
 </html>

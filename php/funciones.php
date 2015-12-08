@@ -34,4 +34,28 @@ switch ($orden) {
 		# code...
 		break;
 }
+function BajaAlumno()
+{
+	$nco ="'".$_POST["ncontrol"]."'";
+	$con = mysql_connect("localhost","root","");
+	mysql_select_db("pw10");
+	$consulta = sprintf("delete from alumnos where ncontrol=%s",$ncontrol);
+		mysql_query($consulta);
+		if(mysql_affected_rows() > 0)
+			print "Registro eliminado";
+		else
+			print "El registro no se pudo eliminar";
+
+	}
+$orden= $_POST["orden"];
+switch ($orden) {
+	case 'BajaAlumno':
+		BajaAlumno();
+		break;
+	
+	default:
+		# code...
+		break;
+
+}
 ?>

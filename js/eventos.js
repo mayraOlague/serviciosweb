@@ -5,6 +5,11 @@ var inicioApp =function ()
  {
  	$("#secAltaAlumnos").show("slow");
  }
+ var bajas=function()
+ {
+ 	$("#secBajaAlumnos").show("slow");
+ }
+
  var GuardaAltaAlumno=function()
  {
  	var ncontrol=$("#txtNumControl").val();
@@ -42,8 +47,10 @@ var inicioApp =function ()
  }
  //cuando damos click en el boton btnAltas
  //Se dispara la funcion: altas
+ $("#btnBajas").on("click",bajas);
  $("#btnAltas").on("click",altas);
  $("#frmAltaAlumnos").on("submit",GuardaAltaAlumno);
+ $("#frmBajaAlumnos").on("submit",BajaAlumno)
 }
 //al estar listo el documento dispara la funcion inicial.
 $(document).on("ready",inicioApp);

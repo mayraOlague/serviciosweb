@@ -20,3 +20,9 @@ header ul li button
 	margin: 0 auto;
 	width: 350px;  /*es el tamano de las cajas del formulario de alta alumnos*/
 }
+#secBajaAlumnos
+{
+	display: none;
+	margin:0 auto;
+	width: 350px;
+}
