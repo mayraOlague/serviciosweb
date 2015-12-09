@@ -32,3 +32,9 @@ header ul li button
 	margin: 0 auto;
 	width:350px;
 }
+#secConsultaAlumnos
+{
+	display: none;
+	margin:0 auto;
+	width: 350px;
+}

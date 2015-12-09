@@ -116,15 +116,23 @@ var GuardaCambioAlumno=function(){
 
  	 });
 }
+ 	var consulta=function();
+ 	{
+ 		$("body > section").hide("slow");
+ 	// $("#secAltaAlumnos").hide("slow");
+ 	$("#secConsultaAlumnos").show("slow");
+ 	}
 
  //cuando damos click en el boton btnAltas
  //Se dispara la funcion: altas
+ $("btnConsultas").on("click",consultas);
  $("#btnCambios").on("click",cambios);
  $("#btnBajas").on("click",bajas);
  $("#btnAltas").on("click",altas);
  $("#frmAltaAlumnos").on("submit",GuardaAltaAlumno);
  $("#frmBajaAlumno").on("submit",BajaAlumno);
  $("#frmCambioAlumnos").on("submit",GuardaCambioAlumno);
+ $("#frmConsultaAlumnos").on("submit",GuardaConsultaAlumno);
 //al estar listo el documento dispara la funcion inicial.
 
 }
