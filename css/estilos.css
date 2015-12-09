@@ -22,7 +22,13 @@ header ul li button
 }
 #secBajaAlumnos
 {
-	display: none;
+	display: none; /* para ocultar el formulario */
 	margin:0 auto;
 	width: 350px;
+}
+#secCambioAlumnos
+{
+	display: none; /* para ocultar el formulario */
+	margin: 0 auto;
+	width:350px;
 }

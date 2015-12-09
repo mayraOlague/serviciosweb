@@ -36,9 +36,24 @@
  	</section>
  	<section id="secBajaAlumnos">
  		<h2>Bajas de Alumnos</h2>
- 		<form action="javascript:BajaAlumno();" id ="frmBajaAlumnos"></form>
- 		<input type="text" id="txtNumControl" placeholder="Número de Control" class="form-control" required>
+ 		<form action="javascript:BajaAlumno();" id ="frmBajaAlumno">
+ 		<input type="text" id="txtNumControl3" placeholder="Número de Control" class="form-control" required>
  		<input type="submit" value="Aceptar">
+ 	</form>
+ 	</section>
+ 	<section id="secCambioAlumnos">
+ 		<h2>Cambio De Alumnos</h2>
+ 		<form action="javascript:GuardaCambioAlumno();" id="frmCambioAlumnos"> 
+ 		<input type="text" id="txtNumControl2" placeholder="Número de control" class="form-control" required autofocus  >
+ 		<input type="text" id="txtNombres2" placeholder="Nombres" class="form-control" required  >
+ 		<input type="text" id="txtApellidoPat2" placeholder="Apellido Paterno" class="form-control" required  >
+ 		<input type="text" id="txtApellidoMat2" placeholder="Apellido Materno" class="form-control" required  >
+ 		<input type="text" id="txtClaveCarrera2" placeholder="Clave Carrera" class="form-control" required  >
+ 		<input type="text" id="txtSemestre2" placeholder="Semestre" class="form-control" required  >
+ 		<input type="text" id="txtPromedio2" placeholder="Promedio" class="form-control" required  >
+ 		<input type="text" id="txtEstatus2" placeholder="Estatus" class="form-control"  required >
+ 		<input type="submit" value="Guardar"><!--  con el submit activamos el formulario -->
+ 		</form>	
  	</section>
 </body>
 </html>
